@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+header{
+    height: 10vh;
+}
+header .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.nav button{
+    cursor: pointer;
+}
+.consult{
+    padding: 10px 20px;
+    background-color: #02F078;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    outline: 0;
+    border: 0;
+}
+.country{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    gap: 6px;
+    background-color: transparent;
+}
+main{
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+main .container{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+main .container .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 230px;
+}
+main .container .right{
+    display: flex;
+    justify-content: flex-end;
+}
+main .container .left .h1{
+    font-size: 72px;
+    font-style: italic;
+}
+main .htext{
+    color: #3D3D3D;
+    font-size: 22px;
+    font-weight: 300;
+}
+main button{
+    border: 1px solid #1B1B1B;
+    padding: 16px 24px 16px 24px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #1B1B1B;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.main_img{
+    width: 100%;
+}
+main button a{
+    color: white;
+    text-decoration: none;
+}
+.next_text{
+    width: 60%;
+    font-size: 32px;
+    font-weight: 200;
+}
+.text_section{
+    padding: 100px 0;
+}
+.partners{
+    height: 200px;
+
+}
+.partners .container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.countrys .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dot{
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 40px;
+}
+.c_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    height: 300px;
+    align-items: center ;
+
+}
+.c_wrapper div{
+    border-radius: 32px 0 32px 32px;
+    height: 100px;
+    height: 224px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.c_wrapper div > img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.c_wrapper p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.c_wrapper a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.usa{
+    background-color: #D3FAC3;
+}
+.canada{
+    background-color: #CDE2FB;
+}
+.europa{
+    background-color: #FAE9EB;
+}
+.velik{
+    background-color: #FEF9DF;
+}
+.dot p{
+    font-size: 15px;
+}
+.c_text{
+    font-size: 64px;
+    width: 60%;
+    text-align: center;
+    font-weight: 300;
+}
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+}
