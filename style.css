@@ -276,7 +276,7 @@ main button a {
 }
 
 .img_back {
-    background-image: url("/img/Subtract.png");
+    background-image: url("./img/Subtract.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
