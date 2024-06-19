@@ -144,7 +144,7 @@ main button a{
     align-items: center ;
 
 }
-.c_wrapper div{
+.c_wrapper > div{
     border-radius: 32px 0 32px 32px;
     height: 100px;
     height: 224px;
@@ -626,9 +626,17 @@ footer .container{
     .map_block_it{
         position: relative;
         display: block;
+        left: auto;
+        top: auto;
+    }
+    .c_text{
+        font-size: 32px;
     }
     .map_top_block{
         width: 100%;
+    }
+    .whywe_card_head{
+        font-size: 32px;
     }
     .map_bottom_block{
         width: 100%;
@@ -669,5 +677,17 @@ footer .container{
     }
     .fot_nav{
         display: block;
+    }
+    .pod_text{
+        font-size: 24px;
+    }
+    .f_text p {
+        font-size: 32px;
+    }
+    .slide_head {
+        font-size: 32px;
+    }
+    .newtxt{
+        width: 69%;
     }
 }
