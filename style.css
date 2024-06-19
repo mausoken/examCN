@@ -53,6 +53,13 @@ header .container {
     border-radius: 6px;
     outline: 0;
     border: 0;
+    letter-spacing: 4px;
+
+    box-shadow: rgb(218, 198, 244) -3px 2px 0px 0px;
+}
+.consult a{
+    color: black !important;
+    letter-spacing: 4px;
 }
 
 .country {
@@ -122,8 +129,8 @@ main button a {
 }
 
 .next_text {
-    width: 60%;
-    font-size: 32px;
+    width: 100%;
+    font-size: 25px;
     font-weight: 200;
 }
 
@@ -287,8 +294,8 @@ main button a {
 
 .mes_block {
     position: absolute;
-    right: 40px;
-    bottom: 60px;
+    right: 60px;
+    bottom: 120px;
 }
 
 .mes_n_top {
@@ -445,7 +452,7 @@ main button a {
     background-color: #DABEF4;
     padding: 25px;
     border-radius: 8px;
-    width: 50%;
+    width: 48%;
 
 }
 
@@ -673,6 +680,11 @@ footer .container {
     color: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
+}
+@media (max-width: 1500px) {
+    .controls{
+        display: flex;
+    }
 }
 @media (max-width: 768px) {
     .nav {
