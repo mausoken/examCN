@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 let bg_menu = document.querySelector(".bg_menu")
 let close_btn = document.querySelector(".close_btn")
 let popyp_menu = document.querySelector(".popyp_menu")
+let hrefs = popyp_menu.querySelectorAll("a")
 let body = document.body
 
 bg_menu.addEventListener("click", () => {
@@ -61,10 +62,21 @@ bg_menu.addEventListener("click", () => {
 
 close_btn.addEventListener("click", () => {
     popyp_menu.style.display = "none";
+    body.style.height = "fit-content"
+    body.style.overflow = "visible"
 });
 
 window.addEventListener("click", (event) => {
     if (event.target == popyp_menu) {
         popyp_menu.style.display = "none";
+        body.style.height = "fit-content"
+    body.style.overflow = "visible"
     }
 });
+hrefs.forEach((el) => {
+    el.addEventListener("click", () => {
+        popyp_menu.style.display = "none";
+        body.style.height = "fit-content"
+    body.style.overflow = "visible"
+    });
+})
