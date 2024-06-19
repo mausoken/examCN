@@ -46,3 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Инициализируем каждый слайдер
     document.querySelectorAll('.slider').forEach(initializeSlider);
 });
+
+
+let bg_menu = document.querySelector(".bg_menu")
+let close_btn = document.querySelector(".close_btn")
+let popyp_menu = document.querySelector(".popyp_menu")
+let body = document.body
+
+bg_menu.addEventListener("click", () => {
+    popyp_menu.style.display = "block";
+    body.style.height = "100vh"
+    body.style.overflow = "hidden"
+});
+
+close_btn.addEventListener("click", () => {
+    popyp_menu.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+    if (event.target == popyp_menu) {
+        popyp_menu.style.display = "none";
+    }
+});
